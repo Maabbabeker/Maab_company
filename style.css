@@ -50,7 +50,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .contact,.gallery,.pricing, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
@@ -786,12 +786,13 @@ footer span a:hover{
     padding-top: var(--main-padding-top);
     padding-bottom: var(--main-padding-bottom);
     position: relative;
-    background-color: var(--section-background);
+    background: rgb(104, 160, 212);
   }
   .services1 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
+    margin-left: 76px;
   }
   .services1 .box {
     background-color: white;
@@ -799,6 +800,7 @@ footer span a:hover{
     counter-increment: services;
     transition: var(--main-transition);
     position: relative;
+    margin-right: 65px;
   }
   .services1 .box::before {
     content: "";
@@ -884,11 +886,13 @@ footer span a:hover{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
+    margin-left: 76px;
   }
   .gallery .box {
     padding: 15px;
     background-color: white;
     box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+    margin-right: 65px;
   }
   .gallery .box .image {
     position: relative;
@@ -949,7 +953,8 @@ footer span a:hover{
   
 /* Start Pricing */
 .pricing{
-    background: rgb(104, 160, 212);
+    background: rgb(255 255 255);
+   /* direction: rtl; */
 }
 .pricing {
     padding-top: var(--main-padding-top);
@@ -961,6 +966,7 @@ footer span a:hover{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
+    margin-left: 76px;
   }
   .pricing .box {
     position: relative;
@@ -968,6 +974,7 @@ footer span a:hover{
     transition: var(--main-transition);
     background: white;
     text-align: center;
+    margin-right: 65px;
     z-index: 1;
   }
   .pricing .box::before,
